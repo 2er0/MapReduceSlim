@@ -85,6 +85,53 @@ and uses their content as input for the run.
 MapReduceSlim('davinci_split', 'davinci_wc_result_multiple_file.txt', wc_mapper, wc_reducer)
 ```
 
+- *Looking up the results*
+
+View the result content
+```bash
+cat davinci_wc_result_one_file.txt 
+# or
+cat davinci_wc_result_multiple_file.txt
+```
+
+Resulting output
+```
+"----Translated 3
+"/Academia      1
+"A      1
+"All    1
+"Another        1
+"As     1
+"Cellini,       1
+"Defects,"      1
+"Essai  1
+"He     1
+"Information    1
+"It     3
+"J.     2
+"Lettere        1
+"Plain  2
+"Project        5
+…
+```
+
+View the number of unique words in the result
+```bash
+wc -l < davinci_wc_result_one_file.txt
+or
+wc -l < davinci_wc_result_multiple_file.txt
+```
+
+Resulting output
+```
+11596
+```
+
+This word-count example demonstrates how map-reduce works in the 
+context of Apache Hadoop. This further does not remove symbols, such as
+point or colon.
+
+
 ## Requirements
 
 **Only Python 3.7+**
