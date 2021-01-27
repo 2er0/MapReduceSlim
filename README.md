@@ -59,7 +59,15 @@ def wc_reducer(key: str, values: list):
 
 **Finally, call the function with the MapReduceSlim framework**
 
-*One input file version*
+- *Import the slim framework*
+
+```python
+from map_reduce_slim import MapReduceSlim, wc_mapper, wc_reducer
+```
+
+The framework already has a sample implementation for the word-count example.
+
+- *One input file version*
 
 This example reads the content from **one file** and uses its content 
 as input for the run.
@@ -68,7 +76,7 @@ as input for the run.
 MapReduceSlim('davinci.txt', 'davinci_wc_result_one_file.txt', wc_mapper, wc_reducer)
 ```
 
-*Directory input version*
+- *Directory input version*
 
 This example reads the content from **all files in the given directory**
 and uses their content as input for the run.
