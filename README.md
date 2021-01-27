@@ -80,4 +80,4 @@ MapReduceSlim('davinci_split', 'davinci_wc_result_multiple_file.txt', wc_mapper,
 
 ## Requirements
 
-**Pure Python 3.7+**
+**Only Python 3.7+**
