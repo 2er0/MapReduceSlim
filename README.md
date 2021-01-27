@@ -1,6 +1,6 @@
 # MapReduceSlim
 
-MapReduce Education Script for learning and testing map-reduce jobs
+MapReduce Education Script for learning and testing map-reduce jobs.
 
 ## Purpose
 
@@ -20,7 +20,7 @@ The reducer retakes a key-value pair, but the value is therefore
 a list of values that share the same key, such as: `('Hello', [1, 1, 1])`. 
 This function produces another key-value pair after some transformation, 
 like a sum aggregation and would result in `('Hello', 3)`.
-This can be expresed as: <img src="https://render.githubusercontent.com/render/math?math=r(k', v'*) -> (k',v'')*">.
+This can be expressed as: <img src="https://render.githubusercontent.com/render/math?math=r(k', v'*) -> (k',v'')*">.
 
 To put it into the context of Python. The mapper is called for each line
 in a file and receives the file name as a key and a line from this file.
