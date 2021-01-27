@@ -14,7 +14,7 @@ First, implement a mapper and a reduce function.
 The mapper function 
 has to perform a mapping defined like this: <img src="https://render.githubusercontent.com/render/math?math=m(k,v) -> (k',v')*">.
 It takes a key-value pair and returns new key-value pairs, such as: 
-`('Hello', 1)`. The produced key-value pair must not correlate with the input key-value pair in this function. 
+`('Hello', 1), ('world', 1)`. The produced key-value pair must not correlate with the input key-value pair in this function. 
 
 The reducer retakes a key-value pair, but the value is therefore 
 a list of values that share the same key, such as: `('Hello', [1, 1, 1])`. 
