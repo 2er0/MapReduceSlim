@@ -78,7 +78,7 @@ MapReduceSlim('davinci.txt', 'davinci_wc_result_one_file.txt', wc_mapper, wc_red
 
 - *Directory input version*
 
-This example reads the content from **all files in the given directory**
+This example reads **all files in the given directory**
 and uses their content as input for the run.
 
 ```python
